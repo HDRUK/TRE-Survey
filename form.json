@@ -1,0 +1,729 @@
+{
+_id: "5f5f3a0383c50de7124bf427",
+type: "form",
+tags: [ ],
+owner: "5f59304e159e841cd93dda48",
+components: [
+{
+title: "0. Administrative Information",
+breadcrumbClickable: true,
+buttonSettings: {
+previous: true,
+cancel: true,
+next: true
+},
+collapsible: false,
+tableView: false,
+key: "page1",
+type: "panel",
+label: "Page 1",
+input: false,
+components: [
+{
+label: "Content",
+refreshOnChange: false,
+tableView: false,
+key: "content",
+type: "content",
+input: false
+},
+{
+title: "Background Information",
+breadcrumbClickable: true,
+buttonSettings: {
+previous: true,
+cancel: true,
+next: true
+},
+collapsible: false,
+tableView: false,
+key: "backgroundInformation",
+type: "panel",
+label: "Panel",
+input: false,
+components: [
+{
+label: "Columns",
+columns: [
+{
+components: [
+{
+label: "Full Name",
+tableView: true,
+key: "fullName",
+type: "textfield",
+input: true,
+hideOnChildrenHidden: false
+},
+{
+label: "Job Title",
+tableView: true,
+key: "jobTitle",
+type: "textfield",
+input: true,
+hideOnChildrenHidden: false
+}
+],
+width: 6,
+offset: 0,
+push: 0,
+pull: 0,
+size: "md"
+},
+{
+components: [
+{
+label: "TRE Organisation",
+widget: "choicesjs",
+tableView: true,
+data: {
+values: [
+{
+label: "EPCC",
+value: "epcc"
+},
+{
+label: "NHS Digital",
+value: "nhsDigital"
+},
+{
+label: "NI Honest Broker Service",
+value: "niHonestBrokerService"
+},
+{
+label: "SAIL",
+value: "sail"
+}
+]
+},
+selectThreshold: 0.3,
+key: "treOrganisation",
+type: "select",
+indexeddb: {
+filter: { }
+},
+input: true,
+hideOnChildrenHidden: false
+},
+{
+label: "Role in Organisation",
+tableView: true,
+key: "roleInOrganisation",
+type: "textfield",
+input: true,
+hideOnChildrenHidden: false
+}
+],
+width: 6,
+offset: 0,
+push: 0,
+pull: 0,
+size: "md"
+}
+],
+tableView: false,
+key: "columns",
+type: "columns",
+input: false
+},
+{
+label: "Description of Trusted Research Environment",
+autoExpand: false,
+tableView: true,
+key: "descriptionOfTrustedResearchEnvironment",
+type: "textarea",
+input: true
+}
+]
+}
+]
+},
+{
+title: "0. SAFE People",
+breadcrumbClickable: true,
+buttonSettings: {
+previous: true,
+cancel: true,
+next: true
+},
+collapsible: false,
+tableView: false,
+key: "page2",
+type: "panel",
+label: "Page 2",
+input: false,
+components: [
+{
+html: "<h4>Who is going to be accessing the data?</h4><p>Safe People should have the right motivations for accessing research data. Safe People should also have sufficient experience to work with the data safely. Researchers may need to undergo specific training before using sensitive or confidential research data to become Safe People.</p><p>The purpose of this section is to ensure that:</p><ul><li>any individual or organisation with access to the data requested is identified</li><li>all identified individuals and organisations are given access for the sole purpose of reaching the public benefit declared</li><li>all identified individuals have the necessary expertise to work with the data safely</li></ul>",
+label: "Content",
+refreshOnChange: false,
+tableView: false,
+key: "content1",
+type: "content",
+input: false
+},
+{
+label: "What controls do you put on the people who use your TRE? ",
+placeholder: "For example, data governance training, signing a legal document with terms and conditions of use.",
+autoExpand: false,
+tableView: true,
+key: "whatControlsDoYouPutOnThePeopleWhoUseYourTre",
+type: "textarea",
+input: true
+},
+{
+label: "What technical access mechanisms you support?",
+placeholder: "For example, Self-service user registration/login, SSO, 2FA, etc.",
+autoExpand: false,
+tableView: true,
+key: "whatTechnicalAccessMechanismsYouSupport",
+type: "textarea",
+input: true
+},
+{
+label: "Does access to the environment have to be via a recognised “trusted” organisation?",
+placeholder: "For example from a university network within the UK? Please provide details.",
+autoExpand: false,
+tableView: true,
+key: "doesAccessToTheEnvironmentHaveToBeViaARecognisedTrustedOrganisation",
+type: "textarea",
+input: true
+},
+{
+label: "Can the environment be accessed from anywhere in the world? If not, please provide specifics. ",
+autoExpand: false,
+tableView: true,
+key: "canTheEnvironmentBeAccessedFromAnywhereInTheWorldIfNotPleaseProvideSpecifics",
+type: "textarea",
+input: true
+}
+]
+},
+{
+title: "1. SAFE Data",
+breadcrumbClickable: true,
+buttonSettings: {
+previous: true,
+cancel: true,
+next: true
+},
+collapsible: false,
+tableView: false,
+key: "page3",
+type: "panel",
+label: "Page 3",
+input: false,
+components: [
+{
+html: "<p>Safe data will present minimal risk possible to the confidentiality of the data subjects. The minimisation of risk could be achieved by removing direct identifiers, aggregating values, banding variables, or other statistical techniques that may create identification more difficult. Sensitive or confidential data could not be considered to be safe because of the residual risk to data subject to confidentiality.<br><br>The purpose of this section is to ensure that:&nbsp;</p><ul><li>the data requested it is proportionate to the requirement of the project&nbsp;</li><li>all data requested is necessary in order to achieve the public benefit declared&nbsp;</li><li>patients cannot be identified by your team by cross-referencing data sets from anywhere else</li></ul>",
+label: "Content",
+refreshOnChange: false,
+tableView: false,
+key: "content2",
+type: "content",
+input: false
+},
+{
+label: "How do you provision datasets for users within your environment?",
+placeholder: "For example, access to minimised read-only copies of dataset within their workspace",
+autoExpand: false,
+tableView: true,
+key: "howDoYouProvisionDatasetsForUsersWithinYourEnvironment",
+type: "textarea",
+input: true
+},
+{
+label: "How do you provision external datasets within your environment?",
+placeholder: "For example, users may be free to bring in open datasets within your environment, but external controlled access datasets may need to go through a review process before being provisioned",
+autoExpand: false,
+tableView: true,
+key: "howDoYouProvisionExternalDatasetsWithinYourEnvironment",
+type: "textarea",
+input: true
+},
+{
+label: "Do you provide mechanisms to transmit data securely to other TREs?",
+placeholder: "For example, TREs often provide secure file/data transfer services to transmit data to user and/or TREs",
+autoExpand: false,
+tableView: true,
+key: "doYouProvideMechanismsToTransmitDataSecurelyToOtherTrEs",
+type: "textarea",
+input: true
+},
+{
+label: "Which tools, techniques and processes do you use in your TRE to manage and reduce the potential risk of re-identification?",
+autoExpand: false,
+tableView: true,
+key: "whichToolsTechniquesAndProcessesDoYouUseInYourTreToManageAndReduceThePotentialRiskOfReIdentification",
+type: "textarea",
+input: true
+}
+]
+},
+{
+title: "3. SAFE Settings",
+breadcrumbClickable: true,
+buttonSettings: {
+previous: true,
+cancel: true,
+next: true
+},
+collapsible: false,
+tableView: false,
+key: "page4",
+type: "panel",
+label: "Page 4",
+input: false,
+components: [
+{
+label: "Content",
+refreshOnChange: false,
+tableView: false,
+key: "content3",
+type: "content",
+input: false
+},
+{
+title: "Environment Administration",
+breadcrumbClickable: true,
+buttonSettings: {
+previous: true,
+cancel: true,
+next: true
+},
+collapsible: false,
+tableView: false,
+key: "environmentAdministration",
+type: "panel",
+label: "Panel",
+input: false,
+components: [
+{
+label: "Is your environment provisioned on premise or within a public cloud? Please provide details.",
+autoExpand: false,
+tableView: true,
+key: "isYourEnvironmentProvisionedOnPremiseOrWithinAPublicCloudPleaseProvideDetails",
+type: "textarea",
+input: true
+},
+{
+label: "Do you provide tenancy isolation between projects/users?",
+placeholder: "For example, environments may provide network, storage and physical infrastructure isolation between users/projects within their environment",
+autoExpand: false,
+tableView: true,
+key: "doYouProvideTenancyIsolationBetweenProjectsUsers",
+type: "textarea",
+input: true
+},
+{
+label: "What security measures are in place to mitigate the risk of a. Unauthorised access, b. Data Loss c. Misuse by user",
+autoExpand: false,
+tableView: true,
+key: "whatSecurityMeasuresAreInPlaceToMitigateTheRiskOfAUnauthorisedAccessBDataLossCMisuseByUser",
+type: "textarea",
+input: true
+},
+{
+label: "Does your environment have a price list? If so please provide details",
+autoExpand: false,
+tableView: true,
+key: "doesYourEnvironmentHaveAPriceListIfSoPleaseProvideDetails",
+type: "textarea",
+input: true
+}
+]
+},
+{
+title: "Infrastructure Details",
+breadcrumbClickable: true,
+buttonSettings: {
+previous: true,
+cancel: true,
+next: true
+},
+collapsible: false,
+tableView: false,
+key: "infrastructureDetails",
+type: "panel",
+label: "Panel",
+input: false,
+components: [
+{
+label: "What is the standard/maximum computing power you can offer to users of your environment?",
+placeholder: "For example, Standard Users (CPU: v16, GPU: 0, RAM: 16GB, HDD: 500GB, OS: Windows/Linux); Power Users (CPU: v128, GPU: 4, RAM: 2TB, HDD: 4TB, OS: Windows/Linux)",
+autoExpand: false,
+tableView: true,
+key: "whatIsTheStandardMaximumComputingPowerYouCanOfferToUsersOfYourEnvironment",
+type: "textarea",
+input: true
+},
+{
+label: "Do you have standard base operating system? If so, please provide details including any modifications",
+placeholder: "For example CentOS 8.2 Desktop, Ubuntu Desktop 20.04 LTS, Windows 10 Desktop",
+autoExpand: false,
+tableView: true,
+key: "doYouHaveStandardBaseOperatingSystemIfSoPleaseProvideDetailsIncludingAnyModifications",
+type: "textarea",
+input: true
+},
+{
+label: "Are users allowed to modify the base VM? If so, please provide details how this is managed",
+placeholder: "For example, users are able to save versions of their modified VMs to be reused within their environment",
+autoExpand: false,
+tableView: true,
+key: "areUsersAllowedToModifyTheBaseVmIfSoPleaseProvideDetailsHowThisIsManaged",
+type: "textarea",
+input: true
+},
+{
+label: "Do you provide users direct access to a Virtual Machine in your environment? Please provide details",
+placeholder: "For example SSH or RDP/VNC access is provided to authorised users",
+autoExpand: false,
+tableView: true,
+key: "doesYouProvideDirectAccessToAVirtualMachineInYourEnvironmentPleaseProvideDetails",
+type: "textarea",
+input: true
+},
+{
+label: "What measures do you employ to control access to the VM?",
+placeholder: "For example users are prevented to connect to virtual USB, external drives or access to the internet",
+autoExpand: false,
+tableView: true,
+key: "whatMeasureDoYouEmployToControlAccessToTheVm",
+type: "textarea",
+input: true
+}
+]
+},
+{
+title: "Software Details",
+breadcrumbClickable: true,
+buttonSettings: {
+previous: true,
+cancel: true,
+next: true
+},
+collapsible: false,
+tableView: false,
+key: "software",
+type: "panel",
+label: "Panel",
+input: false,
+components: [
+{
+label: "What software is provided as default to users? Please provide details",
+placeholder: "For example, SPSS, Excel, Python 3.7, R",
+autoExpand: false,
+tableView: true,
+key: "whatSoftwareIsProvidedAsDefaultToUsersPleaseProvideDetails",
+type: "textarea",
+input: true
+},
+{
+label: "Are users allowed to import code/software (inluding libraries) into their environment? If so do you employ any security measures during import",
+placeholder: "For example, users are allowed to import code/software into their environment but software will be reviewed before it is provisioned into their environment",
+autoExpand: false,
+tableView: true,
+key: "areUsersAllowedToImportCodeSoftwareInludingLibrariesIntoTheirEnvironmentIfSoDoYouEmployAnySecurityMeasuresDuringImport",
+type: "textarea",
+input: true
+},
+{
+label: "Does your environment provide managed internal collaboration tooling? If so please provide details",
+placeholder: "For example users are can collaborate with other members of their project using a private git repository",
+autoExpand: false,
+tableView: true,
+key: "doesYourEnvironmentProvideManagedInternalCollaborationToolingIfSoPleaseProvideDetails",
+type: "textarea",
+input: true
+},
+{
+label: "What measures do you have in place to detect/prevent malicious code execution in your environment?",
+placeholder: "For example, users are prevented to import external code into a TRE environments and are only able to execute TRE approved software",
+autoExpand: false,
+tableView: true,
+key: "whatMeasureDoYouHaveInPlaceToDetectPreventMaliciousCodeExecutionInYourEnvironment",
+type: "textarea",
+input: true
+}
+]
+},
+{
+title: "Managed Services Details",
+breadcrumbClickable: true,
+buttonSettings: {
+previous: true,
+cancel: true,
+next: true
+},
+collapsible: false,
+tableView: false,
+key: "softwareServices",
+type: "panel",
+label: "Panel",
+input: false,
+components: [
+{
+label: "Does your environment provide managed data analytics services? If so, please provide details",
+placeholder: "For example, Databricks, Hadoop, Kubernetes, Airflow, etc.",
+autoExpand: false,
+tableView: true,
+key: "whatComputingEnvironmentsOtherThanVMsToYouOffer",
+type: "textarea",
+input: true
+},
+{
+label: "Does your environment support federated queries of metadata and/or data from external authorised users? If so, please provide details",
+placeholder: "For example, environments may provide controlled APIs to allow users query metadata of datasets or obtain cohort counts based on a user-submitted query",
+autoExpand: false,
+tableView: true,
+key: "doesYourEnvironmentSupportFederatedQueriesOfMetadataAndOrDataFromExternalAuthorisedUsers",
+type: "textarea",
+input: true
+},
+{
+label: "Does your environment support federated analytics? If so, please provide details",
+placeholder: "For example, authorised users are able to submit a workflow/job definition that will be executed and resulting outputs returned within or external to their environment",
+autoExpand: false,
+tableView: true,
+key: "doesYourEnvironmentSupportFederatedAnalytics",
+type: "textarea",
+input: true
+}
+]
+}
+]
+},
+{
+title: "4. Safe Outputs",
+breadcrumbClickable: true,
+buttonSettings: {
+previous: true,
+cancel: true,
+next: true
+},
+collapsible: false,
+tableView: false,
+key: "page5",
+type: "panel",
+label: "Page 5",
+input: false,
+components: [
+{
+label: "Content",
+refreshOnChange: false,
+tableView: false,
+key: "content4",
+type: "content",
+input: false
+},
+{
+label: "Columns",
+columns: [
+{
+components: [
+{
+label: "What types of data can a user export from your environment?",
+widget: "choicesjs",
+tableView: true,
+data: {
+values: [
+{
+label: "Aggregate level graphs and tables",
+value: "aggregateLevelGraphsAndTables"
+},
+{
+label: "individual level, anonymised data",
+value: "individualLevelAnonymisedData"
+},
+{
+label: "Weights and code for a trained AI algorithm",
+value: "weightsAndCodeForATrainedAiAlgorithm"
+},
+{
+label: "Source code developed with the environment",
+value: "sourceCodeDevelopedWithTheEnvironment"
+},
+{
+label: "Software executable developed within the environment",
+value: "softwareExecutableDevelopedWithinTheEnvironment"
+},
+{
+label: "Other, please Specify",
+value: "otherPleaseSpecify"
+}
+]
+},
+selectThreshold: 0.3,
+key: "whatTypesOfDataCanAUserExportFromYourEnvironment",
+type: "select",
+indexeddb: {
+filter: { }
+},
+input: true,
+hideOnChildrenHidden: false
+}
+],
+width: 6,
+offset: 0,
+push: 0,
+pull: 0,
+size: "md"
+},
+{
+components: [
+{
+label: "Other types of data. Please list",
+autoExpand: false,
+tableView: true,
+key: "otherTypesOfData",
+conditional: {
+show: true,
+when: "whatTypesOfDataCanAUserExportFromYourEnvironment",
+eq: "otherPleaseSpecify"
+},
+type: "textarea",
+input: true,
+hideOnChildrenHidden: false
+}
+],
+width: 6,
+offset: 0,
+push: 0,
+pull: 0,
+size: "md"
+}
+],
+tableView: false,
+key: "columns1",
+type: "columns",
+input: false
+},
+{
+label: "Columns",
+columns: [
+{
+components: [
+{
+label: "Do you have plans to export other types of data?",
+widget: "choicesjs",
+tableView: true,
+data: {
+values: [
+{
+label: "Yes",
+value: "yes"
+},
+{
+label: "No",
+value: "no"
+}
+]
+},
+selectThreshold: 0.3,
+key: "doYouHavePlansToExportOtherTypesOfData",
+type: "select",
+indexeddb: {
+filter: { }
+},
+input: true,
+hideOnChildrenHidden: false
+}
+],
+width: 6,
+offset: 0,
+push: 0,
+pull: 0,
+size: "md"
+},
+{
+components: [
+{
+label: "Please describe your plans for other types of data exports",
+autoExpand: false,
+tableView: true,
+key: "pleaseDescribeYourPlansForOtherTypesOfDataExports",
+conditional: {
+show: true,
+when: "doYouHavePlansToExportOtherTypesOfData",
+eq: "yes"
+},
+type: "textarea",
+input: true,
+hideOnChildrenHidden: false
+}
+],
+width: 6,
+offset: 0,
+push: 0,
+pull: 0,
+size: "md"
+}
+],
+tableView: false,
+key: "columns2",
+type: "columns",
+input: false
+},
+{
+label: "Describe your process for checking disclosure control on exported data",
+placeholder: "Please cover, any manual checking process description, software used/considered for this purpose, data export frequency allowed, data export mechanism, any restrictions",
+autoExpand: false,
+tableView: true,
+key: "describeYourProcessForCheckingDisclosureControlOnExportedData",
+type: "textarea",
+input: true
+}
+]
+},
+{
+title: "Submit",
+breadcrumbClickable: true,
+buttonSettings: {
+previous: true,
+cancel: true,
+next: true
+},
+collapsible: false,
+tableView: false,
+key: "page6",
+type: "panel",
+label: "Page 6",
+input: false,
+components: [
+{
+label: "Anything else you would like to add",
+autoExpand: false,
+tableView: true,
+key: "anythingElseYouWouldLikeToAdd",
+type: "textarea",
+input: true
+}
+]
+}
+],
+revisions: "",
+_vid: 0,
+title: "Five SAFE TRE Survey",
+display: "wizard",
+access: [
+{
+roles: [
+"5f59307b4681866667959122",
+"5f59307b4681866ac1959123",
+"5f59307b468186864b959124"
+],
+type: "read_all"
+}
+],
+submissionAccess: [ ],
+controller: "",
+properties: { },
+settings: { },
+name: "TRESurvey",
+path: "fivesafetresurvey",
+project: "5f59307b4681863b80959121",
+created: "2020-09-14T09:38:11.979Z",
+modified: "2020-09-14T12:47:39.864Z",
+machineName: "urjkhvoyqgpjekt:fiveSafeTreSurvey"
+}
